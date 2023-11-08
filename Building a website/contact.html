@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>All About Me</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+
+    <link href="layout.css" rel="stylesheet" media="screen">
+    <link href="styles.css" rel="stylesheet" media="screen">
+    <link href="print.css" rel="stylesheet" media="print">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="contact_timer.js" defer></script>
+    <style>
+        body {
+            background-color: rgb(53, 65, 88);
+            background: url("pepe.gif") no-repeat fixed top right, url("mer.jpg");
+            color: whitesmoke;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact </h1>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="pictures.html">Pictures</a></li>
+
+            </ul>
+        </nav>
+        <div id="currentTime"></div>
+
+    </header>
+
+
+    <form id="contact" method="POST" action="https://bscacad3.buffalostate.edu/~nageles/form.php">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required><br><br>
+            <label for="subject">Suggestions:</label>
+            <textarea id="subject" name="subject"></textarea>
+        </fieldset>
+
+        <h4>How did you do in this class?</h4>
+        <label class="container"> I failed :/
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container"> I passed!
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container"> I don't want to talk about it
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        
+            <h4>Which of these vehicles do you own?</h4>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+              
+        <input type="submit" onclick="test()" value="submit" id="subButton">
+    </form>
+
+
+    <footer>&copy; 2022 Omar Assaf </footer>
+
+</body>
+
+</html>

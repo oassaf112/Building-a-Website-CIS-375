@@ -1,0 +1,106 @@
+/*Omar Assaf*/
+
+/*All devices*/
+body {
+    margin: 0 auto;
+    /*center the body*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 5px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Mobile Devices*/
+@media only screen and (max-width: 600px) {
+
+
+    body {
+        width: 95%;
+    }
+
+    header,
+    footer,
+    main {
+        flex: 1 1 600px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    nav ul li {
+        margin-top: 5px;
+        margin-right: 0;
+        margin-bottom: 5px;
+        margin-left: 0;
+    }
+
+    aside {
+        display: none;
+    }
+
+}
+
+div#currentTime {
+    font-size: 0.9em;
+    line-height: 1em;
+}
+
+/*Larger devices*/
+@media only screen and (min-width: 601px) {
+
+
+    body {
+        width: 80%;
+        min-width: 640px;
+        max-width: 960px;
+
+    }
+
+    header,
+    footer {
+        flex: 1 1 600px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    nav ul li {
+        flex: 1 1 600px;
+        margin: 0 20px;
+    }
+
+    main {
+        flex: 4 1 400px;
+    }
+
+    aside {
+        flex: 1 1 200px;
+    }
+}
+
+div#currentTime {
+    font-size: 1.1em;
+    line-height: 1.2em;
+    top: 15px;
+}
